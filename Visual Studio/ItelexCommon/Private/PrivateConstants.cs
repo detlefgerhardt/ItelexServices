@@ -17,7 +17,7 @@ namespace ItelexCommon
 
 		public const int ITELEX_905259_PIN = 0;
 
-		public const string MSGSRV_FAXNUMBER = "+49 6426 123456";
+		public const string MSGSRV_FAXNUMBER = "+49 ...";
 
 		public const string TELEX_TELEXGATE_PASSWORD = "password";
 	}
