@@ -15,7 +15,7 @@ namespace ItelexMsgServer
 		public const string SYSLOG_HOST = "192.168.0.1";
 		public const int SYSLOG_PORT = 514;
 		public const string SYSLOG_APPNAME = "MsgService";
-		public const string DEBUG_EMAIL_ADDRESS = "mail@dgerhardt.de";
+		public const string DEBUG_EMAIL_ADDRESS = PrivateConstants.DEBUG_EMAIL_ADDRESS;
 
 #if DEBUG
 		public const string LOG_PATH = @".\logs";
@@ -23,10 +23,8 @@ namespace ItelexMsgServer
 		public const string MAILKIT_LOG = null;
 		//public const string MAILKIT_LOG = "MailKit.log";
 		public const string DATABASE_NAME = @"d:\daten\Itelex\ItelexMsgServer\ItelexMsgServer.sqlite";
-		//public const string EMAIL_ADDRESS = "test@telexgate.de";
 		public const string EMAIL_ADDRESS = "telex@telexgate.de";
-		public const string EMAIL_PASSWORD = PrivateConstants.MSGSRV_MAILPASSWORD;
-		//public const string FAX_PATH = @"d:\daten\Itelex\ItelexMsgServer\";
+		public const string EMAIL_PASSWORD = PrivateConstants.TELEX_TELEXGATE_PASSWORD;
 		public const string PRUEFTEXTE_PATH = @"d:\daten\Itelex\ItelexMsgServer\prueftexte.txt";
 #else
 		public const string LOG_PATH = @".\logs";
@@ -35,7 +33,6 @@ namespace ItelexMsgServer
 		public const string DATABASE_NAME = "ItelexMsgServer.sqlite";
 		public const string EMAIL_ADDRESS = "telex@telexgate.de";
 		public const string EMAIL_PASSWORD = PrivateConstants.TELEX_TELEXGATE_PASSWORD;
-		//public const string FAX_PATH = @".\fax\";
 		public const string PRUEFTEXTE_PATH = @".\prueftexte.txt";
 #endif
 
@@ -65,13 +62,13 @@ namespace ItelexMsgServer
 
 #if DEBUG
 		public const bool FIX_DNS = false;
-		public const int DEFAULT_NUMBER_DE = 905259;
-		public const int DEFAULT_NUMBER_EN = 905259;
-		//public const int DEFAULT_NUMBER_SENDMAIL = 905259;
-		//public const int DEFAULT_NUMBER_SENDFAX = 905259;
+		public const int DEFAULT_NUMBER_DE = PrivateConstants.ITELEX_DEBUG_NUMBER;
+		public const int DEFAULT_NUMBER_EN = PrivateConstants.ITELEX_DEBUG_NUMBER;
+		//public const int DEFAULT_NUMBER_SENDMAIL = PrivateConstants.ITELEX_DEBUG_NUMBER;
+		//public const int DEFAULT_NUMBER_SENDFAX = PrivateConstants.ITELEX_DEBUG_NUMBER;
 		public const int DEFAULT_PUBLIC_PORT = 8135;
 		public const int DEFAULT_LOCAL_PORT = 8135;
-		public const int DEFAULT_PIN = ITELEX_905259_PIN;
+		public const int DEFAULT_PIN = PrivateConstants.ITELEX_DEBUG_PIN;
 		public const int MINITELEX_LOCAL_PORT = 10000;
 		public const int MINITELEX_PUBLIC_PORT = 50000;
 		public const string OWN_FAX_NUMBER = PrivateConstants.MSGSRV_FAXNUMBER;

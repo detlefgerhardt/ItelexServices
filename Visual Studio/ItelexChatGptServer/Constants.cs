@@ -45,13 +45,13 @@ namespace ItelexChatGptServer
 		public const int DEFAULT_PIN = 0000;
 #else
 		public const bool FIX_DNS = false;
-		public const int DEFAULT_NUMBER_DE = 905259;
-		public const int DEFAULT_NUMBER_EN = 905259;
+		public const int DEFAULT_NUMBER_DE = PrivateConstants.ITELEX_DEBUG_NUMBER;
+		public const int DEFAULT_NUMBER_EN = PrivateConstants.ITELEX_DEBUG_NUMBER;
 		public const int DEFAULT_PUBLIC_PORT = 8135;
 		public const int DEFAULT_LOCAL_PORT = 8135;
 		public const int DEFAULT_EXTENSION_DE = 11;
 		public const int DEFAULT_EXTENSION_EN = 12;
-		public const int DEFAULT_PIN = PrivateConstants.ITELEX_905259_PIN;
+		public const int DEFAULT_PIN = PrivateConstants.ITELEX_DEBUG_PIN;
 #endif
 
 		public const int DEFAULT_MONITOR_PORT = 9145;

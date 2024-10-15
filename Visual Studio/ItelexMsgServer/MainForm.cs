@@ -135,7 +135,8 @@ namespace ItelexMsgServer
 			//MailManager.Instance.ReceiveAndDistributeMails();
 			byte[] data = new byte[] { 0x01, 0x02, 0x03 };
 
-			MailManager.Instance.SendMailSmtp("mail@dgerhardt.de", "Test mit Anhang", "Die Nachricht", 211231, "test.bin", data);
+			MailManager.Instance.SendMailSmtp(
+					PrivateConstants.DEBUG_EMAIL_ADDRESS, "Test mit Anhang", "Die Nachricht", 211231, "test.bin", data);
 		}
 
 		private void TestFax()

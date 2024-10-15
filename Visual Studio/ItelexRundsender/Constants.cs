@@ -57,14 +57,14 @@ namespace ItelexRundsender
 		public const bool FIX_DNS = true;
 #else
 		public const string DATABASE_NAME = @"d:\daten\Itelex\ItelexRundsender\ItelexRundsender.sqlite";
-		public const int ITELEX_NUMBER_RUND_DE = 905259;
-		public const int ITELEX_NUMBER_RUND_EN = 905259;
-		public const int ITELEX_NUMBER_ADMIN_DE = 905259;
-		public const int ITELEX_NUMBER_ADMIN_EN = 905259;
+		public const int ITELEX_NUMBER_RUND_DE = PrivateConstants.ITELEX_DEBUG_NUMBER;
+		public const int ITELEX_NUMBER_RUND_EN = PrivateConstants.ITELEX_DEBUG_NUMBER;
+		public const int ITELEX_NUMBER_ADMIN_DE = PrivateConstants.ITELEX_DEBUG_NUMBER;
+		public const int ITELEX_NUMBER_ADMIN_EN = PrivateConstants.ITELEX_DEBUG_NUMBER;
 		public const int PUBLIC_PORT = 8135;
 		public const int LOCAL_PORT = 8135;
 		//public const int EXTENSION = 12;
-		public const int ITELEX_PIN = PrivateConstants.ITELEX_905259_PIN;
+		public const int ITELEX_PIN = PrivateConstants.ITELEX_DEBUG_PIN;
 		public const bool FIX_DNS = false;
 #endif
 

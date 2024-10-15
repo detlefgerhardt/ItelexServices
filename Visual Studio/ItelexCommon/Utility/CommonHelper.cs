@@ -321,7 +321,7 @@ namespace ItelexCommon.Utility
 			const string SMTP_USERNAME = "telex@telexgate.de";
 			const string SMTP_PASSWORD = PrivateConstants.TELEX_TELEXGATE_PASSWORD;
 			const string FROM = "telex@telexgate.de";
-			const string TO = "mail@dgerhardt.de";
+			const string TO = PrivateConstants.DEBUG_EMAIL_ADDRESS;
 
 			string body = string.IsNullOrWhiteSpace(msg) ? "" : msg;
 			try
@@ -363,7 +363,7 @@ namespace ItelexCommon.Utility
 				string from = "telex@telexgate.de";
 				string uri = "http://www.telexgate.de/send.php";
 
-				if (to == null) to = "mail@dgerhardt.de";
+				if (to == null) to = PrivateConstants.DEBUG_EMAIL_ADDRESS;
 				if (message == null) message = subject;
 
 				WebClient client = new WebClient();

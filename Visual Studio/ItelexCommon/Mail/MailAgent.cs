@@ -309,7 +309,7 @@ namespace ItelexCommon.Mail
 			//const string SMTP_PASSWORD = PrivateConstants.MSGSRV_MAILPASSWORD;
 			//const string FROM = "telex@telexgate.de";
 #endif
-			//const string TO = "mail@dgerhardt.de";
+			//const string TO = PrivateConstants.DEBUG_EMAIL_ADDRESS;
 			//const string SUBJ = "MailKit-Test 1";
 			//const string BODY = "Hallo äöüÄÖÜß";
 

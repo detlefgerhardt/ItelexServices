@@ -33,11 +33,11 @@ namespace ItelexWeatherServer
 #else
 		public const string LOG_PATH = @".\logs";
 		public const bool FIX_DNS = false;
-		public const int DEFAULT_NUMBER = 905259;
+		public const int DEFAULT_NUMBER = PrivateConstants.ITELEX_DEBUG_NUMBER;
 		public const int DEFAULT_PUBLIC_PORT = 8135;
 		public const int DEFAULT_LOCAL_PORT = 8135;
 		public const int DEFAULT_EXTENSION = 12;
-		public const int DEFAULT_PIN = PrivateConstants.ITELEX_905259_PIN;
+		public const int DEFAULT_PIN = PrivateConstants.ITELEX_DEBUG_PIN;
 #endif
 
 		public const int DEFAULT_MONITOR_PORT = 9143;
